@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import './style.css';
 import { createGame, getUsersData, createUserData } from './api';
 

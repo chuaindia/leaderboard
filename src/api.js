@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const apiBaseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
 const gameId = '0kY85yL0KhloRBs8Qkjq';
 
