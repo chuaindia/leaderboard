@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+  font-family: 'Varela Round', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 3em;
+}
+
+.header {
+  display: flex;
+  font-weight: bold;
+  text-align: left;
+}
+
+.page {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.scoreDisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.scoreBoard {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.recentScoresHeader {
+  color: black;
+}
+
+.refreshBtn {
+  background-color: rgb(182, 182, 182);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.scoreBoardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.entryContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 0.4em;
+  height: min-content;
+}
+
+.addYourScoreHeader {
+  color: black;
+}
+
+.nameInput {
+  color: black;
+  border: 2px solid black;
+}
+
+.scoreInput {
+  color: black;
+  border: 2px solid black;
+}
+
+.submitBtn {
+  background-color: rgb(182, 182, 182);
+  border: 2px solid black;
+}
+
+.scoreBoardItem {
+  display: flex;
+  border: solid black 2px;
+  width: 15em;
+  justify-content: space-between;
+  padding: 0.2em;
+}

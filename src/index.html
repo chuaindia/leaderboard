@@ -1,31 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta charset="utf-8" />
     <title>Leaderboard</title>
-</head>
-<body>
-    <h1>Leaderboard</h1>
-    <div class="container">
-        <article class="recent-scores">
-          <div class="refresh-scores">
-            <h2>Recent scores</h2>
-            <div>
-              <input type="submit" class='refresh-btn' id="refresh-button" value="Refresh">
-            </div>
-          </div>
-          <div class='display-scores' id="scores-display"></div>
-        </article>
-        <article class="add-scores">
-          <h2>Add your score</h2>
-          <div class="input-scores">
-            <input id="user-name" name="user-name" placeholder="Your name" required />
-            <input id="user-score" class='score' name="user-score" placeholder="Your score" required />
-            <input id="user-data-submit" type="submit" value="Submit" />
-          </div>
-        </article>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/8a3c9493da.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1 class="header" Heading="Leader Board">Leaderboard</h1>
+    <div class="page">
+      <div class="scoreDisplay">
+        <div class="scoreBoard">
+          <h2 class="recentScoresHeader">Recent Scores</h2>
+          <button class="refreshBtn">Refresh</button>
+        </div>
+        <div id="scoreBoardContainer" class="scoreBoardContainer"></div>
+      </div>
+
+      <form class="entryContainer">
+        <h2 class="addYourScoreHeader">Add your score</h2>
+        <input
+          id="nameInput"
+          name = "user"
+          class="nameInput"
+          type="text"
+          placeholder="Your name here"
+        />
+        <input
+          id="scoreInput"
+          name = "score"
+          class="scoreInput"
+          type="number"
+          placeholder="Your score here"
+        />
+        <button id="submitBtn" class="submitBtn" type="submit">Submit</button>
+      </form>
     </div>
-</body>
+  </body>
 </html>

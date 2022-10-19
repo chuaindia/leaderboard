@@ -4,38 +4,39 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  target: 'web',
   devServer: {
-    contentBase: './dist',
-    headers: {
-      'Access-Control-Allow-Origin': '*',
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
     },
+    port: 3000,
+    open: true,
+    hot: true,
+    compress: true,
+    historyApiFallback: true,
   },
+  entry: './src/index.js',
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
   ],
   output: {
-    filename: 'bundle.js',
+    filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true,
+    libraryTarget: 'umd',
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {
-        test: /\.css$/i,
+        test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.m?js$/,
+        test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-          },
-        },
+        use: ['babel-loader'],
       },
     ],
   },

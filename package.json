@@ -1,43 +1,47 @@
 {
-    "name": "my-webpack-biolerplate",
+    "name": "the-leader-board",
     "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "description": "> This project allows user to add and remove items from the list and determine whether they are done or not. \r > The project works by running the command in your terminal 'npm run build' following 'npm start'. If linters are checked locally, please don't forget to install the needed modules 'npm install', if you have a webpack error in your terminal, please run the following command instead 'npm i webpack' and then run the previous commands again.",
+    "main": "webpack.config.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "watch": "webpack --watch",
       "start": "webpack serve --open",
       "build": "webpack"
     },
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/JauJau088/my-webpack-biolerplate.git"
+      "url": "git+https://github.com/shuhad786/The-Leader-Board.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-      "url": "https://github.com/JauJau088/my-webpack-biolerplate/issues"
+      "url": "https://github.com/shuhad786/The-Leader-Board/issues"
     },
-    "homepage": "https://github.com/JauJau088/my-webpack-biolerplate#readme",
+    "homepage": "https://github.com/shuhad786/The-Leader-Board#readme",
     "devDependencies": {
+      "@babel/core": "^7.19.3",
+      "@babel/preset-env": "^7.19.3",
       "babel-eslint": "^10.1.0",
-      "css-loader": "^6.7.1",
+      "babel-jest": "^29.1.2",
+      "babel-loader": "^8.2.5",
+      "babel-preset-env": "^1.7.0",
+      "css-loader": "^6.5.1",
       "eslint": "^7.32.0",
       "eslint-config-airbnb-base": "^14.2.1",
-      "eslint-plugin-import": "^2.26.0",
-      "hint": "^6.2.0",
+      "eslint-plugin-import": "^2.25.4",
+      "html-loader": "^4.2.0",
       "html-webpack-plugin": "^5.5.0",
       "style-loader": "^3.3.1",
       "stylelint": "^13.13.1",
       "stylelint-config-standard": "^21.0.0",
       "stylelint-csstree-validator": "^1.9.0",
       "stylelint-scss": "^3.21.0",
-      "webpack": "^5.72.0",
-      "webpack-cli": "^4.9.2",
-      "webpack-dev-server": "^4.8.1"
+      "webpack-dev-server": "^4.11.1"
     },
     "dependencies": {
-      "lodash": "^4.17.21"
+      "lodash": "^4.17.21",
+      "webpack": "^5.74.0",
+      "webpack-cli": "^4.10.0"
     }
   }

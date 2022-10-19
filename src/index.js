@@ -1,46 +1,17 @@
 /* eslint-disable linebreak-style */
-import './style.css';
-import { createGame, getUsersData, createUserData } from './api';
+import './styles.css';
+import { addEntry, getEntry } from './modules/API.js';
 
-const refreshButton = document.getElementById('refresh-button');
+const refresh = document.querySelector('.refreshBtn');
+const form = document.querySelector('.entryContainer');
+const nameValue = document.querySelector('.nameInput');
+const scoreValue = document.querySelector('.scoreInput');
 
-const loadScores = async () => {
-  const scoresDisplay = document.getElementById('scores-display');
-
-  while (scoresDisplay.firstChild) {
-    scoresDisplay.removeChild(scoresDisplay.firstChild);
-  }
-
-  const usersData = await getUsersData();
-
-  usersData.result.forEach((entry) => scoresDisplay.insertAdjacentHTML('beforeend', `
-    <div>${entry.user}: ${entry.score}</div>  
-  `));
-};
-
-refreshButton.addEventListener('click', loadScores);
-
-const userDataSubmit = document.getElementById('user-data-submit');
-
-userDataSubmit.addEventListener('click', async () => {
-  let userName = document.getElementById('user-name').value;
-  let userScore = document.getElementById('user-score').value;
-
-  if (userName !== '' && userScore !== '') {
-    const data = {
-      user: userName,
-      score: userScore,
-    };
-
-    await createUserData(data);
-
-    userName = '';
-    userScore = '';
-  }
-  loadScores();
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  addEntry(nameValue.value, scoreValue.value);
+  document.querySelector('.nameInput').value = '';
+  document.querySelector('.scoreInput').value = '';
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  createGame(`Game created at: ${new Date()}`);
-  loadScores();
-});
+refresh.addEventListener('click', getEntry);
