@@ -1,119 +1,52 @@
-:root {
-  --black: #000;
-  --gray: #e5e5e5;
-  --white: #fff;
-}
+/* Add styles */
 
-*,
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-
-.main-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 4rem;
-}
-
-.main-container h1 {
-  width: 70%;
-  padding: 50px 0 50px 0;
-  font-size: 38px;
-  font-weight: 700;
-}
-
-.score-container {
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  gap: 5%;
-}
-
-h2 {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-button,
-input[type="submit"] {
-  outline: none;
-  border: 1px var(--black) solid;
-  background-color: transparent;
-  font-size: 14px;
-  font-weight: 700;
-  padding: 5px 20px;
-  cursor: pointer;
-  box-shadow: 2px 2px 2px var(--black);
-  border-radius: 5px;
-  transition: 0.5s ease-in-out;
-}
-
-button:hover,
-input[type="submit"]:hover {
-  background-color: var(--gray);
-}
-
-.recent-score {
-  width: 50%;
-  border: 1px var(--black) solid;
-  max-height: 400px;
-  overflow-y: auto;
-}
-
-.recent-score-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 10px;
-}
-
-.recent-score li {
-  padding: 10px;
-  list-style: none;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.list-gray {
-  background-color: var(--gray);
-}
-
-.list-white {
-  background-color: var(--white);
-}
-
-.add-new-score {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  padding: 20px 10px;
-  gap: 30px;
-}
-
-.add-new-score h2 {
-  width: calc(100% - 30px);
-}
-
-.add-new-score input {
-  outline: none;
-  padding: 10px 20px;
-  border: 1px var(--black) solid;
-  background-color: transparent;
-  font-size: 14px;
-  font-weight: 600;
-  width: calc(100% - 40px);
-  border-radius: 5px;
-}
-
-.add-new-score input::placeholder {
-  color: var(--black);
-}
-
-.add-new-score input:last-child {
-  width: 100px;
-  margin-left: auto;
-}
-
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .refresh-scores {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .refresh-scores h2 {
+    font-size: 20px;
+  }
+  
+  .refresh-btn {
+    margin: 18px;
+    background-color: white;
+  }
+  
+  .display-scores {
+    border: 3px solid black;
+    padding: 5px 1px;
+  }
+  
+  .display-scores div:nth-of-type(2n) {
+    background-color: rgb(233, 230, 230);
+  }
+  
+  .input-scores {
+    display: table-caption;
+  }
+  
+  .score {
+    margin: 1em 0;
+  }
+  
+  .add-scores h2 {
+    font-weight: initial;
+  }
+  

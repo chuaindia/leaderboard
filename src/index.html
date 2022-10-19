@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leader board</title>
-  </head>
-  <body>
-    <section class="main-container">
-      <h1>Leader board</h1>
-      <div class="score-container">
-        <div class="recent-score">
-          <div class="recent-score-header">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with APIs</title>
+</head>
+<body>
+    <h1>Leaderboard</h1>
+    <div class="container">
+        <article class="recent-scores">
+          <div class="refresh-scores">
             <h2>Recent scores</h2>
-            <button type="button" class="refresh-button">Refresh</button>
+            <div>
+              <input type="submit" class='refresh-btn' id="refresh-button" value="Refresh">
+            </div>
           </div>
-          <ul class="recent-score-group"></ul>
-        </div>
-        <form class="add-new-score">
+          <div class='display-scores' id="scores-display"></div>
+        </article>
+        <article class="add-scores">
           <h2>Add your score</h2>
-          <input type="text" name="name" required placeholder="Your Name" />
-          <input type="number" name="score" required placeholder="Your Score" />
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
-    </section>
-  </body>
+          <div class="input-scores">
+            <input id="user-name" name="user-name" placeholder="Your name" required />
+            <input id="user-score" class='score' name="user-score" placeholder="Your score" required />
+            <input id="user-data-submit" type="submit" value="Submit" />
+          </div>
+        </article>
+    </div>
+</body>
 </html>

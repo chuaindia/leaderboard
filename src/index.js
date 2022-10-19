@@ -1,16 +1,45 @@
 import './style.css';
-import Score from './modules/API.js';
+import { createGame, getUsersData, createUserData } from './api';
 
-const newScore = new Score();
-const addNewScore = document.querySelector('.add-new-score');
-addNewScore.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const user = addNewScore.name.value;
-  const scoreNum = addNewScore.score.value;
-  newScore.addScore({ user, scoreNum });
-  addNewScore.name.value = '';
-  addNewScore.score.value = '';
+const refreshButton = document.getElementById('refresh-button');
+
+const loadScores = async () => {
+  const scoresDisplay = document.getElementById('scores-display');
+
+  while (scoresDisplay.firstChild) {
+    scoresDisplay.removeChild(scoresDisplay.firstChild);
+  }
+
+  const usersData = await getUsersData();
+
+  usersData.result.forEach((entry) => scoresDisplay.insertAdjacentHTML('beforeend', `
+    <div>${entry.user}: ${entry.score}</div>  
+  `));
+};
+
+refreshButton.addEventListener('click', loadScores);
+
+const userDataSubmit = document.getElementById('user-data-submit');
+
+userDataSubmit.addEventListener('click', async () => {
+  let userName = document.getElementById('user-name').value;
+  let userScore = document.getElementById('user-score').value;
+
+  if (userName !== '' && userScore !== '') {
+    const data = {
+      user: userName,
+      score: userScore,
+    };
+
+    await createUserData(data);
+
+    userName = '';
+    userScore = '';
+  }
+  loadScores();
 });
 
-const refreshButton = document.querySelector('.refresh-button');
-refreshButton.addEventListener('click', newScore.fetchScore);
+document.addEventListener('DOMContentLoaded', () => {
+  createGame(`Game created at: ${new Date()}`);
+  loadScores();
+});
