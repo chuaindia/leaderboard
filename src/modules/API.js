@@ -10,7 +10,7 @@ class Score {
 
   getScore = () => {
     const recentScore = document.querySelector('.recent-score-group');
-    recentScore.innerHTML = this.scoreData.map((element, index) => `<li class=${index % 2 !== 0 ? 'list-white' : 'list-gray'}>${element.user} : ${element.score}</li>`).join('');
+    recentScore.innerHTML = this.scoreData.map((element, index) => `<li class=${index % 2 !== 0 ? 'list-gray' : 'list-white'}>${element.user} : ${element.score}</li>`).join('');
   }
 
   fetchScore = async () => {
