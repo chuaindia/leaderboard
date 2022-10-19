@@ -116,3 +116,44 @@ input[type="submit"]:hover {
   width: 100px;
   margin-left: auto;
 }
+
+@media (max-width: 768px) {
+  .score-container {
+    min-width: 350px;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .recent-score,
+  .add-new-score h2 {
+    width: 100%;
+  }
+
+  .add-new-score {
+    width: calc(100% - 20px);
+  }
+
+  .add-new-score input {
+    width: calc(100% - 20px);
+    padding: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .score-container {
+    min-width: calc(100% - 20px);
+  }
+
+  .main-container h1 {
+    width: 350px;
+    text-align: center;
+  }
+
+  .recent-score {
+    overflow-x: auto;
+  }
+
+  .recent-score li {
+    width: auto;
+  }
+}
