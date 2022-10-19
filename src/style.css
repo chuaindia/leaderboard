@@ -1,9 +1,9 @@
-/* Add styles */
-
-body {
-    margin: 0;
-    padding: 0;
-  }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
   
   .container {
     display: flex;
@@ -26,8 +26,7 @@ body {
   
   .refresh-btn {
     margin: 18px;
-    background-color: white;
-  }
+   }
   
   .display-scores {
     border: 3px solid black;
