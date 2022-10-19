@@ -19,8 +19,7 @@ class Score {
       const res = await data.json();
       const displayData = res.result.map((item) => item);
       return this.getScore();
-    }
-    catch (err) { return err; }
+    } catch (err) { return err; }
   };
 
   addScore = async ({ user, scoreNum }) => {
@@ -38,8 +37,7 @@ class Score {
       this.scoreData.push(newgame);
       this.getScore();
       return data;
-    }
-    catch (err) { return err; }
+    } catch (err) { return err; }
   }
 }
 
