@@ -4,7 +4,7 @@
 # LEADERBOARD Project
 
 
-> "LeaderBoard" is a project to show scores of the leaders. In first part a wireframe of the project is constructed.
+> "LeaderBoard" is a project to show scores of the leaders. In this part API facilities are invoked.
 
 
 ## Built With
@@ -21,7 +21,7 @@ WEBPACK
 
 JEST
 
-
+API
 
 ## Live Demo (if available)
 
