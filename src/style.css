@@ -30,36 +30,38 @@ body {
   width: 70%;
   display: flex;
   justify-content: center;
-  gap: 5%;
+  gap: 6%;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
+  border: 1px black solid;
+  gap: 5%;
 }
 
 button,
 input[type="submit"] {
   outline: none;
-  border: 1px var(--black) solid;
+  border: 1px black solid;
   background-color: transparent;
   font-size: 14px;
   font-weight: 700;
   padding: 5px 20px;
   cursor: pointer;
-  box-shadow: 2px 2px 2px var(--black);
+  box-shadow: 2px 2px 2px black;
   border-radius: 5px;
   transition: 0.5s ease-in-out;
 }
 
 button:hover,
 input[type="submit"]:hover {
-  background-color: var(--gray);
+  background-color: gray;
 }
 
 .recent-score {
   width: 50%;
-  border: 1px var(--black) solid;
+  border: 1px black solid;
   max-height: 400px;
   overflow-y: auto;
 }
@@ -78,11 +80,11 @@ input[type="submit"]:hover {
 }
 
 .list-gray {
-  background-color: var(--gray);
+  background-color: gray;
 }
 
 .list-white {
-  background-color: var(--white);
+  background-color: white;
 }
 
 .add-new-score {
@@ -100,7 +102,7 @@ input[type="submit"]:hover {
 .add-new-score input {
   outline: none;
   padding: 10px 20px;
-  border: 1px var(--black) solid;
+  border: 1px black solid;
   background-color: transparent;
   font-size: 14px;
   font-weight: 600;
@@ -109,7 +111,7 @@ input[type="submit"]:hover {
 }
 
 .add-new-score input::placeholder {
-  color: var(--black);
+  color: black;
 }
 
 .add-new-score input:last-child {
@@ -117,43 +119,6 @@ input[type="submit"]:hover {
   margin-left: auto;
 }
 
-@media (max-width: 768px) {
-  .score-container {
-    min-width: 350px;
-    flex-direction: column-reverse;
-    gap: 20px;
-  }
-
-  .recent-score,
-  .add-new-score h2 {
-    width: 100%;
-  }
-
-  .add-new-score {
-    width: calc(100% - 20px);
-  }
-
-  .add-new-score input {
-    width: calc(100% - 20px);
-    padding: 10px;
-  }
-}
-
-@media (max-width: 360px) {
-  .score-container {
-    min-width: calc(100% - 20px);
-  }
-
-  .main-container h1 {
-    width: 350px;
-    text-align: center;
-  }
-
-  .recent-score {
-    overflow-x: auto;
-  }
-
-  .recent-score li {
-    width: auto;
-  }
+.RS {
+  border: 1px black solid;
 }

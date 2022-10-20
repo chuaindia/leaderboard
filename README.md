@@ -6,6 +6,8 @@
 
 > "LeaderBoard" is a project to show scores of the leaders. In this part API facilities are invoked.
 
+development
+
 
 ## Built With
 
@@ -25,14 +27,16 @@ API
 
 ## Live Demo (if available)
 
-
-
-
 ## Getting Started
+
+
+In this part of the project a new branch is created With all the previous facilities in the leaderboard App (API is utilised). The styles are incorporated following the guideline.
 
 Create a repository, clone it in the local location.
 
 Following the instructions, progress is made.
+
+development
 
 ### Prerequisites
 
