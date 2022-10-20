@@ -4,7 +4,7 @@
 # LEADERBOARD Project
 
 
-> "LeaderBoard" is a project to show scores of the leaders. In first part a wireframe of the project is constructed.
+> "LeaderBoard" is a project to show scores of the leaders. In first part a wireframe of the project is constructed. In this part complete project is done with required style
 
 
 ## Built With
