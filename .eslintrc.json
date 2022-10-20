@@ -18,7 +18,6 @@
       "import/extensions": [ 1, {
         "js": "always", "json": "always"
       }]
-development
     },
     "ignorePatterns": [
       "dist/",
