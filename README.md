@@ -4,7 +4,7 @@
 # LEADERBOARD Project
 
 
-> "LeaderBoard" is a project to show scores of the leaders. In first part a wireframe of the project is constructed. In this part complete project is done with required style
+> "LeaderBoard" is a project to show scores of the leaders. This is the 3rd stage of the project. In this part, complete project is done with required style. API is also invoked here.
 
 
 ## Built With
@@ -30,9 +30,7 @@ JEST
 
 ## Getting Started
 
-Create a repository, clone it in the local location.
-
-Following the instructions progress is made.
+In this part of the project a new branch is created With all the previous facilities in the leaderboard App (API is utilised). The styles are incorporated following the guideline.
 
 ### Prerequisites
 
