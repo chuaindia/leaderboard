@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leaderboard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://kit.fontawesome.com/8a3c9493da.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <h1 class="header" Heading="Leader Board">Leaderboard</h1>
-    <div class="page">
-      <div class="scoreDisplay">
-        <div class="scoreBoard">
-          <h2 class="recentScoresHeader">Recent Scores</h2>
-          <button class="refreshBtn">Refresh</button>
+    <section class="main-container">
+      <h1>Leaderboard</h1>
+      <div class="score-container">
+        <div class="recent-score">
+          <div class="recent-score-header">
+            <h2>Recent scores</h2>
+            <button type="button" class="refresh-button">Refresh</button>
+          </div>
+          <ul class="recent-score-group"></ul>
         </div>
-        <div id="scoreBoardContainer" class="scoreBoardContainer"></div>
+        <form class="add-new-score">
+          <h2>Add your score</h2>
+          <input type="text" name="name" required placeholder="Name"/>
+          <input type="number" name="score" required placeholder="Score"/>
+          <input type="submit" value="Submit" />
+        </form>
       </div>
-
-      <form class="entryContainer">
-        <h2 class="addYourScoreHeader">Add your score</h2>
-        <input id="nameInput" name = "user" class="nameInput" type="text" required placeholder="Name"/>
-        <input id="scoreInput" name = "score" class="scoreInput" type="number" required placeholder="Score"/>
-        <button id="submitBtn" class="submitBtn" type="submit">Submit</button>
-      </form>
-    </div>
+    </section>
   </body>
 </html>

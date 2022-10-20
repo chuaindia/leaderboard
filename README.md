@@ -32,7 +32,7 @@ API
 
 Create a repository, clone it in the local location.
 
-Following the instructions progress is made.
+Following the instructions, progress is made.
 
 ### Prerequisites
 
