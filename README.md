@@ -1,9 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Leaderboard Project
+
+# LEADERBOARD Project
 
 
-> "Leaderboard" is a tool that helps to put the scores of leaders on the board.
+> "LeaderBoard" is a project to show scores of the leaders. In this part API facilities are invoked.
 
 
 ## Built With
@@ -20,7 +21,7 @@ WEBPACK
 
 JEST
 
-
+API
 
 ## Live Demo (if available)
 
@@ -31,7 +32,7 @@ JEST
 
 Create a repository, clone it in the local location.
 
-Following the instructions progress is made.
+Following the instructions, progress is made.
 
 ### Prerequisites
 
