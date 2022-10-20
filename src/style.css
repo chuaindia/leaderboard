@@ -1,3 +1,9 @@
+:root {
+  --black: #000;
+  --gray: #e5e5e5;
+  --white: #fff;
+}
+
 *,
 body {
   margin: 0;
@@ -31,7 +37,10 @@ h2 {
   font-size: 17px;
   font-weight: 700;
   border: 1px black solid;
+  gap: 5%;
 }
+
+
 
 button,
 input[type="submit"] {
@@ -49,7 +58,7 @@ input[type="submit"] {
 
 button:hover,
 input[type="submit"]:hover {
-  background-color: gray;
+background-color: gray;
 }
 
 .recent-score {
@@ -114,4 +123,44 @@ input[type="submit"]:hover {
 
 .RS {
   border: 1px black solid;
+
+@media (max-width: 768px) {
+  .score-container {
+    min-width: 350px;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .recent-score,
+  .add-new-score h2 {
+    width: 100%;
+  }
+
+  .add-new-score {
+    width: calc(100% - 20px);
+  }
+
+  .add-new-score input {
+    width: calc(100% - 20px);
+    padding: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .score-container {
+    min-width: calc(100% - 20px);
+  }
+
+  .main-container h1 {
+    width: 350px;
+    text-align: center;
+  }
+
+  .recent-score {
+    overflow-x: auto;
+  }
+
+  .recent-score li {
+    width: auto;
+  }
 }

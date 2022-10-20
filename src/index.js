@@ -1,6 +1,7 @@
-/* eslint-disable linebreak-style */
+
 import './style.css';
 import Score from './modules/Api.js';
+
 
 const newScore = new Score();
 const addNewScore = document.querySelector('.add-new-score');
