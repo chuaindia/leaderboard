@@ -1,5 +1,6 @@
+/* eslint-disable import/no-unresolved */
 import './style.css';
-import Score from './modules/Api.js';
+import Score from 'src/modules/Api.js';
 
 const newScore = new Score();
 const addNewScore = document.querySelector('.add-new-score');
